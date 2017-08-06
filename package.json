@@ -1,0 +1,13 @@
+{
+  "name": "photography-portfolio",
+  "version": "1.0.0",
+  "description": "Simple photography showcase",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "imagemin": "imagemin img/*",
+    "uglify": "uglifyjs js/*.js"
+  },
+  "author": "Zach Mitchell",
+  "license": "ISC"
+}

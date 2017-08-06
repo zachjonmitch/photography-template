@@ -1,0 +1,163 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFF1F3;
+    color: #555;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+a {
+    color: #555;
+}
+
+#showcase {
+    background-image: url('../img/exposure-pic.jpg');
+    background-position: center left;
+    background-size: cover;
+}
+
+#showcase .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #191B3D;
+    opacity: .90;
+}
+
+#showcase h1 {
+    margin-top: -55px;
+    color: #FFE066;
+    position: relative;
+    font-family: 'Yellowtail', helvetica;
+    font-size: 55px;
+}
+
+#masthead {
+    position: absolute;
+    bottom: 0;
+    background-color: #EFF1F3;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+    height: 60px;
+}
+
+#masthead a {
+    color: #555;
+}
+
+#masthead .mobile-brand {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#masthead .fa-camera-retro {
+    border-right: 1px solid #ccc;
+}
+
+#masthead .fa-camera-retro {
+    font-size: 30px;
+    display: none;
+}
+
+#masthead .nav-item {
+    border-left: 1px solid #ccc
+}
+
+#portfolio {
+
+}
+
+#portfolio h2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#portfolio hr {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+}
+
+#portfolio ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0
+}
+
+#portfolio li {
+    display: inline-block;
+    font-weight: 300;
+}
+
+#gallery .col-lg-4 {
+    padding: 15px;
+}
+
+#gallery img {
+    border-radius: 2px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+
+#mastfoot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#mastfoot li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #191B3D;
+    margin: 1px;
+}
+
+#mastfoot p {
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    #portfolio h2 {
+        font-size: 32px;
+    }
+
+    #portfolio br {
+        display: none;
+    }
+    
+    #portfolio li {
+        margin: 5 20px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+    #portfolio h2 {
+        font-size: 36px;
+    }
+
+    #masthead .mobile-brand {
+        display: none;
+    }
+
+    #masthead .fa-camera-retro {
+        display: block;
+    }
+}
+
