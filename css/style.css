@@ -52,33 +52,46 @@ a {
     bottom: 0;
     background-color: #EFF1F3;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
-    height: 60px;
+    height: 50px;
 }
 
 #masthead a {
     color: #555;
 }
 
+#masthead button {
+    margin-top: 5px;
+}
+
 #masthead .mobile-brand {
     font-weight: 600;
     font-size: 20px;
+    line-height: 40px;
 }
 
-#masthead .fa-camera-retro {
+#masthead .camera {
+    width: 75px;
     border-right: 1px solid #ccc;
 }
 
-#masthead .fa-camera-retro {
-    font-size: 30px;
-    display: none;
+#masthead .camera .icon {
+    font-size: 24px;
 }
 
-#masthead .nav-item {
-    border-left: 1px solid #ccc
+#masthead li {
+    border-left: 1px solid #ccc;
+    width: 135px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-#portfolio {
+#masthead .arrow {
+    width: 75px;
+    cursor: pointer;
+}
 
+#masthead .arrow .icon {
+    font-size: 28px;
 }
 
 #portfolio h2 {
@@ -105,13 +118,107 @@ a {
     font-weight: 300;
 }
 
-#gallery .col-lg-4 {
+#gallery .image-wrap {
     padding: 15px;
+    height: 300px;
+    color: white;
 }
 
-#gallery img {
-    border-radius: 2px;
+#gallery .image {
+    position: relative;
+    cursor: pointer;
+}
+
+#gallery .image-wrap:first-child .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(2) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(3) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(4) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(5) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(6) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(7) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:nth-child(8) .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+#gallery .image-wrap:last-child .image {
+    background-image: url('../img/exposure-pic.jpg');
+    background-size: cover;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+
+#gallery .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #191B3D;
+    opacity: 0;
+}
+
+#gallery .content {
+    position: relative;
+    opacity: 0;
+}
+
+#gallery .content h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#gallery .content p {
+    display: inline-block;
+    font-weight: 300;
+}
+
+#gallery .content p::after {
+    content: '/';
+    padding-left: 5px;
+}
+
+#gallery .content p:last-of-type::after {
+    display: none;
+}
+
+
+#gallery .image:hover .overlay {
+    opacity: .9;
+}
+
+#gallery .image:hover .content {
+    opacity: 1;
+}
+
+#gallery .search {
+    color: #FFE066;
+    font-size: 22px;
 }
 
 #mastfoot ul {
@@ -121,11 +228,11 @@ a {
 }
 
 #mastfoot li {
-    display: inline;
+    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
     color: #191B3D;
-    margin: 1px;
+    cursor: pointer;
 }
 
 #mastfoot p {
@@ -145,6 +252,20 @@ a {
         margin: 5 20px;
         font-size: 17px;
     }
+
+    #gallery .image-wrap {
+        height: 400px;
+    }
+
+    #mastfoot li {
+        font-size: 20px;
+        margin: 20px 40px;
+    }
+
+    #mastfoot p {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -152,12 +273,12 @@ a {
         font-size: 36px;
     }
 
-    #masthead .mobile-brand {
-        display: none;
+    #gallery .image-wrap {
+        height: 260px;
     }
 
-    #masthead .fa-camera-retro {
-        display: block;
+    #masthead .mobile-brand {
+        display: none;
     }
 }
 
