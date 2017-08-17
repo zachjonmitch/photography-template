@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #EFF1F3;
+    background-color: grey;
     color: #555;
 }
 
@@ -117,72 +117,43 @@ a {
 }
 
 #gallery .image-wrap {
-    padding: 15px;
-    height: 300px;
-    color: white;
+    padding: 14px;
 }
 
 #gallery .image {
     position: relative;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
     cursor: pointer;
 }
 
-#gallery .image-wrap:first-child .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+#gallery .image:hover .overlay {
+    opacity: .9;
 }
-#gallery .image-wrap:nth-child(2) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(3) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(4) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(5) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(6) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(7) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:nth-child(8) .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-}
-#gallery .image-wrap:last-child .image {
-    background-image: url('../img/exposure-pic.jpg');
-    background-size: cover;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+
+#gallery .image:hover .content {
+    opacity: 1;
 }
 
 #gallery .overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #191B3D;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #191B3D;
     opacity: 0;
 }
 
 #gallery .content {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    color: white;
     opacity: 0;
 }
 
@@ -203,15 +174,6 @@ a {
 
 #gallery .content p:last-of-type::after {
     display: none;
-}
-
-
-#gallery .image:hover .overlay {
-    opacity: .9;
-}
-
-#gallery .image:hover .content {
-    opacity: 1;
 }
 
 #gallery .search {
@@ -251,10 +213,6 @@ a {
         font-size: 17px;
     }
 
-    #gallery .image-wrap {
-        height: 400px;
-    }
-
     #mastfoot li {
         font-size: 20px;
         margin: 20px 40px;
@@ -292,10 +250,6 @@ a {
 
     #portfolio h2 {
         font-size: 36px;
-    }
-
-    #gallery .image-wrap {
-        height: 260px;
     }
 
     #masthead .mobile-brand {
